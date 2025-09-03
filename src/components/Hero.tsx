@@ -1,4 +1,5 @@
 import { ArrowRight, Download } from 'lucide-react';
+import profilePicture from '@/assets/profile-picture.jpg';
 
 const Hero = () => {
   const scrollToPortfolio = () => {
@@ -31,8 +32,8 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mx-auto w-48 h-48 rounded-full overflow-hidden glow-cyan animate-fade-in-up">
             <img 
-              src="/lovable-uploads/c38b35ff-f521-4aa9-b80a-44e23ef056b7.png" 
-              alt="Varun Venkatapuram"
+              src={profilePicture} 
+              alt="Varun Venkatapuram - Full Stack Java Developer"
               className="w-full h-full object-cover"
             />
           </div>
