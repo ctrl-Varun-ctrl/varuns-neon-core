@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="space-y-8">
           {/* Profile Image */}
-          <div className="mx-auto w-48 h-48 rounded-full overflow-hidden glow-cyan animate-fade-in-up">
+          <div className="mx-auto w-48 h-48 rounded-full overflow-hidden glow-cyan animate-fade-in-up mt-8">
             <img src={profilePicture} alt="Varun Venkatapuram - Full Stack Java Developer" className="w-full h-full object-cover" />
           </div>
 
