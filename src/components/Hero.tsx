@@ -77,7 +77,7 @@ const Hero = () => {
         }}>
             <p className="text-sm text-muted-foreground mb-4 font-exo">Specialized in</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Java', 'Spring Boot', 'React', 'AWS', 'Kubernetes', 'AI/ML'].map((tech, index) => <span key={tech} className="skill-badge text-xs" style={{
+              {['Java', 'Spring Boot', 'React', 'Angular', 'AWS', 'Kubernetes', 'AI/ML'].map((tech, index) => <span key={tech} className="skill-badge text-xs" style={{
               animationDelay: `${1 + index * 0.1}s`
             }}>
                   {tech}
