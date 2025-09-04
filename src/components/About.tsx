@@ -1,41 +1,31 @@
 import { GraduationCap, Code, Database, Cloud, Brain, Settings } from 'lucide-react';
-
 const About = () => {
-  const skillCategories = [
-    {
-      icon: <Code className="w-6 h-6" />,
-      title: "Programming Languages",
-      skills: ["Java", "JavaScript/TypeScript", "Node.js", "SQL", "Python"]
-    },
-    {
-      icon: <Settings className="w-6 h-6" />,
-      title: "Frameworks & Libraries",
-      skills: ["Spring Boot", "React", "Angular", "Redux Toolkit", "Tailwind", "Material-UI"]
-    },
-    {
-      icon: <Database className="w-6 h-6" />,
-      title: "Databases",
-      skills: ["PostgreSQL", "Oracle", "MongoDB", "Cassandra", "Redis", "Memcached"]
-    },
-    {
-      icon: <Cloud className="w-6 h-6" />,
-      title: "Cloud & DevOps",
-      skills: ["AWS", "GCP", "Azure", "Kubernetes", "Docker", "Terraform", "CI/CD"]
-    },
-    {
-      icon: <Brain className="w-6 h-6" />,
-      title: "Architecture & Methodologies",
-      skills: ["Microservices", "Event-driven systems", "DDD", "Agile", "TDD"]
-    },
-    {
-      icon: <Settings className="w-6 h-6" />,
-      title: "Other Expertise",
-      skills: ["Okta", "AI/ML enablement", "Performance Engineering", "API Design"]
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 relative">
+  const skillCategories = [{
+    icon: <Code className="w-6 h-6" />,
+    title: "Programming Languages",
+    skills: ["Java", "JavaScript/TypeScript", "Node.js", "SQL", "Python"]
+  }, {
+    icon: <Settings className="w-6 h-6" />,
+    title: "Frameworks & Libraries",
+    skills: ["Spring Boot", "React", "Angular", "Redux Toolkit", "Tailwind", "Material-UI"]
+  }, {
+    icon: <Database className="w-6 h-6" />,
+    title: "Databases",
+    skills: ["PostgreSQL", "Oracle", "MongoDB", "Cassandra", "Redis", "Memcached"]
+  }, {
+    icon: <Cloud className="w-6 h-6" />,
+    title: "Cloud & DevOps",
+    skills: ["AWS", "GCP", "Azure", "Kubernetes", "Docker", "Terraform", "CI/CD"]
+  }, {
+    icon: <Brain className="w-6 h-6" />,
+    title: "Architecture & Methodologies",
+    skills: ["Microservices", "Event-driven systems", "DDD", "Agile", "TDD"]
+  }, {
+    icon: <Settings className="w-6 h-6" />,
+    title: "Other Expertise",
+    skills: ["Okta", "AI/ML enablement", "Performance Engineering", "API Design"]
+  }];
+  return <section id="about" className="py-20 relative">
       <div className="absolute inset-0 tech-grid opacity-10"></div>
       
       <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -88,12 +78,9 @@ const About = () => {
             </h3>
             
             <div className="grid grid-cols-1 gap-4">
-              {skillCategories.map((category, index) => (
-                <div 
-                  key={category.title} 
-                  className="service-card group"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
+              {skillCategories.map((category, index) => <div key={category.title} className="service-card group" style={{
+              animationDelay: `${index * 0.1}s`
+            }}>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                       {category.icon}
@@ -101,20 +88,15 @@ const About = () => {
                     <h4 className="font-semibold text-foreground">{category.title}</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <span key={skill} className="skill-badge text-xs">
+                    {category.skills.map(skill => <span key={skill} className="skill-badge text-xs">
                         {skill}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

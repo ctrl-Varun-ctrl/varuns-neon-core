@@ -1,59 +1,49 @@
 import { CalendarDays, MapPin } from 'lucide-react';
-
 const Experience = () => {
-  const experiences = [
-    {
-      title: "Senior Java Developer",
-      company: "Republic Services",
-      location: "Phoenix, AZ",
-      period: "06/2024 – Present",
-      description: "Leading development of enterprise-scale waste management solutions, implementing microservices architecture and optimizing system performance for sustainability initiatives.",
-      technologies: ["Java", "Spring Boot", "AWS", "Kubernetes", "PostgreSQL"]
-    },
-    {
-      title: "Java Full Stack Developer",
-      company: "Centene Corporation",
-      location: "Tampa, FL",
-      period: "04/2023 – 06/2024",
-      description: "Developed healthcare technology solutions, built responsive web applications, and implemented secure API integrations for patient data management systems.",
-      technologies: ["Java", "React", "Angular", "Spring Boot", "Oracle", "Azure"]
-    },
-    {
-      title: "Java Developer",
-      company: "TIAA Financial Services",
-      location: "Charlotte, NC",
-      period: "06/2022 – 04/2023",
-      description: "Architected financial services applications, implemented event-driven systems, and enhanced system security with Okta integration for retirement planning platforms.",
-      technologies: ["Java", "Spring Boot", "Microservices", "Okta", "PostgreSQL", "Redis"]
-    },
-    {
-      title: "Software Developer",
-      company: "Comake IT Solutions",
-      location: "Hyderabad, India",
-      period: "04/2021 – 12/2021",
-      description: "Developed custom software solutions, implemented CI/CD pipelines, and collaborated with cross-functional teams to deliver high-quality applications.",
-      technologies: ["Java", "JavaScript", "Docker", "Jenkins", "MongoDB", "AWS"]
-    },
-    {
-      title: "Junior Java Developer",
-      company: "Genpact",
-      location: "Hyderabad, India",
-      period: "08/2019 – 04/2021",
-      description: "Built enterprise applications, participated in code reviews, and contributed to system optimization initiatives for global clients.",
-      technologies: ["Java", "Spring", "SQL", "HTML/CSS", "JavaScript"]
-    },
-    {
-      title: "Software Developer",
-      company: "Berkadia Financial Services",
-      location: "Hyderabad, India",
-      period: "07/2017 – 08/2019",
-      description: "Started career developing financial software solutions, learned industry best practices, and contributed to team success in agile development environments.",
-      technologies: ["Java", "Spring Framework", "MySQL", "RESTful APIs"]
-    }
-  ];
-
-  return (
-    <section id="experience" className="py-20 relative">
+  const experiences = [{
+    title: "Senior Java Developer",
+    company: "Republic Services",
+    location: "Phoenix, AZ",
+    period: "06/2024 – Present",
+    description: "Leading development of enterprise-scale waste management solutions, implementing microservices architecture and optimizing system performance for sustainability initiatives.",
+    technologies: ["Java", "Spring Boot", "AWS", "Kubernetes", "PostgreSQL"]
+  }, {
+    title: "Java Full Stack Developer",
+    company: "Centene Corporation",
+    location: "Tampa, FL",
+    period: "04/2023 – 06/2024",
+    description: "Developed healthcare technology solutions, built responsive web applications, and implemented secure API integrations for patient data management systems.",
+    technologies: ["Java", "React", "Angular", "Spring Boot", "Oracle", "Azure"]
+  }, {
+    title: "Java Developer",
+    company: "TIAA Financial Services",
+    location: "Charlotte, NC",
+    period: "06/2022 – 04/2023",
+    description: "Architected financial services applications, implemented event-driven systems, and enhanced system security with Okta integration for retirement planning platforms.",
+    technologies: ["Java", "Spring Boot", "Microservices", "Okta", "PostgreSQL", "Redis"]
+  }, {
+    title: "Software Developer",
+    company: "Comake IT Solutions",
+    location: "Hyderabad, India",
+    period: "04/2021 – 12/2021",
+    description: "Developed custom software solutions, implemented CI/CD pipelines, and collaborated with cross-functional teams to deliver high-quality applications.",
+    technologies: ["Java", "JavaScript", "Docker", "Jenkins", "MongoDB", "AWS"]
+  }, {
+    title: "Junior Java Developer",
+    company: "Genpact",
+    location: "Hyderabad, India",
+    period: "08/2019 – 04/2021",
+    description: "Built enterprise applications, participated in code reviews, and contributed to system optimization initiatives for global clients.",
+    technologies: ["Java", "Spring", "SQL", "HTML/CSS", "JavaScript"]
+  }, {
+    title: "Software Developer",
+    company: "Berkadia Financial Services",
+    location: "Hyderabad, India",
+    period: "07/2017 – 08/2019",
+    description: "Started career developing financial software solutions, learned industry best practices, and contributed to team success in agile development environments.",
+    technologies: ["Java", "Spring Framework", "MySQL", "RESTful APIs"]
+  }];
+  return <section id="experience" className="py-20 relative">
       <div className="absolute inset-0 tech-grid opacity-10"></div>
       
       <div className="max-w-4xl mx-auto px-6 relative z-10">
@@ -69,12 +59,9 @@ const Experience = () => {
           <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-primary"></div>
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div 
-                key={index} 
-                className="relative flex gap-8 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {experiences.map((exp, index) => <div key={index} className="relative flex gap-8 animate-fade-in-up" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 {/* Timeline Marker */}
                 <div className="relative flex-shrink-0">
                   <div className="timeline-marker absolute left-2 md:left-6 transform -translate-x-1/2"></div>
@@ -108,20 +95,15 @@ const Experience = () => {
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech) => (
-                      <span key={tech} className="skill-badge text-xs">
+                    {exp.technologies.map(tech => <span key={tech} className="skill-badge text-xs">
                         {tech}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Experience;
