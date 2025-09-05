@@ -149,21 +149,7 @@ const Portfolio = () => {
         </div>
 
         {/* Additional Projects Teaser */}
-        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <div className="service-card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-orbitron font-bold text-gradient mb-4">More Projects Coming Soon</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              I'm continuously working on innovative projects that showcase cutting-edge technologies 
-              and solve real-world problems. Stay tuned for more exciting developments!
-            </p>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="btn-hero-outline"
-            >
-              Discuss Your Project
-            </button>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

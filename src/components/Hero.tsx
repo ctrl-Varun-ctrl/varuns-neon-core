@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download } from "lucide-react"
 import profilePicture from '@/assets/profile-picture.jpg';
 const Hero = () => {
   const scrollToPortfolio = () => {
@@ -35,7 +35,6 @@ const Hero = () => {
         <div className="space-y-8">
           {/* Profile Image */}
           <div className="mx-auto w-48 h-48 rounded-full overflow-hidden glow-cyan animate-fade-in-up">
-            <img src={profilePicture} alt="Varun Venkatapuram - Full Stack Java Developer" className="w-full h-full object-cover" />
           </div>
 
           {/* Name and Title */}
@@ -54,9 +53,6 @@ const Hero = () => {
           <div className="max-w-3xl mx-auto animate-fade-in-up" style={{
           animationDelay: '0.4s'
         }}>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Building scalable systems, enabling AI adoption, and solving complex problems with clean code.
-            </p>
           </div>
 
           {/* CTA Buttons */}
@@ -67,9 +63,7 @@ const Hero = () => {
               View Portfolio
               <ArrowRight size={20} />
             </button>
-            <button onClick={scrollToContact} className="btn-hero-outline flex items-center gap-3">
-              Get in Touch
-            </button>
+            
             <button className="btn-hero-outline flex items-center gap-3">
               <Download size={20} />
               Download Resume
@@ -82,7 +76,7 @@ const Hero = () => {
         }}>
             <p className="text-sm text-muted-foreground mb-4 font-exo">Specialized in</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Java', 'Spring Boot', 'React', 'AWS', 'Kubernetes', 'AI/ML'].map((tech, index) => <span key={tech} className="skill-badge text-xs" style={{
+              {['Java', 'Spring Boot', 'React','SQL', 'AWS', 'Kubernetes', 'AI/ML'].map((tech, index) => <span key={tech} className="skill-badge text-xs" style={{
               animationDelay: `${1 + index * 0.1}s`
             }}>
                   {tech}

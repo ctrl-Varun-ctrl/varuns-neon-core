@@ -52,7 +52,7 @@ const Contact = () => {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
       value: "LinkedIn Profile",
-      href: "https://linkedin.com/in/varun-venkatapuram"
+      href: "https://www.linkedin.com/in/varun-venkatapuram-b054a217a/"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -67,16 +67,7 @@ const Contact = () => {
       <div className="absolute inset-0 tech-grid opacity-10"></div>
       
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            Get In <span className="text-gradient">Touch</span>
-          </h2>
-          <div className="geometric-divider max-w-xs mx-auto"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
-            Ready to discuss your next project or explore collaboration opportunities? 
-            Let's connect and build something amazing together.
-          </p>
-        </div>
+        
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
@@ -118,19 +109,7 @@ const Contact = () => {
             </div>
 
             {/* Availability */}
-            <div className="service-card">
-              <h4 className="text-lg font-orbitron font-bold text-primary mb-4">
-                Current Availability
-              </h4>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 rounded-full bg-primary animate-glow-pulse"></div>
-                <span className="text-foreground font-medium">Available for new projects</span>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Open to full-time opportunities, consulting projects, and technical advisory roles. 
-                Typical response time: 24-48 hours.
-              </p>
-            </div>
+           
           </div>
 
           {/* Contact Form */}
@@ -209,7 +188,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="btn-hero w-full flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="btn-hero px-5 py-5 bg-primary text-white rounded-lg flex items-center justify-center gap-3"
                 >
                   {isSubmitting ? (
                     <>

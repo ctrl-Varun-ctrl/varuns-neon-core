@@ -41,18 +41,15 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 relative">
-      <div className="absolute inset-0 tech-grid opacity-10"></div>
+    <section id="services" className="py-5 relative">
       
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            Services & <span className="text-gradient">Expertise</span>
+      <div className="max-w-6xl mx-auto px-6 relative z-10 ">
+        <div className="text-center flex flex-col justify-center items-center">
+          <h2 className="text-4xl md:text-5xl  font-orbitron font-bold mb-6">
+            Services & Technologies <span className="text-gradient">Expertise</span>
           </h2>
           <div className="geometric-divider max-w-xs mx-auto"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
-            Comprehensive technology solutions to help your business thrive in the digital age
-          </p>
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
